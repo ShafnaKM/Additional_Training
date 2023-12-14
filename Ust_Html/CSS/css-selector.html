@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* Elementary Selectors*/
+        p{
+            background-color: rgb(122, 194, 225);
+        }
+           /* class Selectors*/
+        .paragraph{
+            min-height: 50px;
+        }
+        .inner-paragraph{
+            color: rgb(237, 21, 21);
+        }
+
+        /* Id Selector*/
+        #p1{
+            text-align: center;
+        }
+
+        /* Pseudo Selector*/
+
+        p:hover{
+
+            min-height: 100px;
+            background-color: brown;
+        }
+    
+
+        /* Universal Selector*/
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="heading1" class="heading">A heading</h2>
+    <p id="p1" class="paragraph ">A Paragraph</p>
+    <div id="d1" class="divs"> A div 
+            <p id="p2" class="paragraph inner-paragraph">A Paragraph inside a div</p>
+    </div>
+    <p id="p3" class="paragraph"> Another Paragraph</p>
+    <div id="d2" class="divs"> Another div</div>
+    <button id="btn1" class="btn">Click me</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(0,0,0,1);
+    color: rgba(255,255,255,1);
+    text-align: center;
+}
+h1,h2,h4{
+    color: rgba(97,97,97,);
+}
+#password{
+    padding: 5px;
+
+}
+#btn{
+    padding: 5px;
+    background-color: rgb(128,128,128);
+    color: rgb(255,255,255);
+    border: solid rgba(255, 255, 255) 1px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(0,0,0);
+    color: rgb(97,97,97);
+    border: solid rgb(97,97,97) 1px;
+}
+ul{
+    color: rgb(128,128,128);
+    line-height: 23px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: left;
+    margin: 0px;
+}
+#valid{
+    color: rgba(227,63,32,1);
+}
+#invalid{
+    color: rgba(47,102,16,1);
+}

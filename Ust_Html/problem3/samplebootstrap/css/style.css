@@ -1,0 +1,36 @@
+
+#carouselExample img
+{
+    height: 350px;
+}
+
+.clscontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.carousel-caption p
+{
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+}
+
+.carousel-caption h3{
+    font-family: 'Charm', cursive;
+}
+
+.navbar{
+    background-color: rgb(252, 204, 141);
+}
+
+.foo{
+background-color: cornflowerblue;
+}

@@ -1,0 +1,3 @@
+let string='Hello Abc';
+let str=string.replace(/[aeiou]/gi,'');
+console.log(str);

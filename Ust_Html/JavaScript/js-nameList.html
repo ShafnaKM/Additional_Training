@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" placeholder="input">
+    <!-- <input type="text" name="username" id="username" placeholder="input"> -->
+    <button onclick="addName()">Add Names</button>
+   <p> <ul id="new name">
+        <li >
+
+        </li>
+    </ul>
+</p>
+</body>
+<script>
+   let  str='';
+    const addName=function(){
+        let name=document.getElementById("username").value;
+        str+=`<li>${name}</li>`
+        document.getElementById("new name").innerHTML=str;
+    }
+   
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Date and Time Example</title>
+
+</head>
+
+<body onload="displayDateTime()">
+
+<h2>Current Date and Time</h2>
+
+<p><time id="datetime"></time></p>
+
+</body>
+
+<script>
+
+function displayDateTime() {
+let now = new Date();
+
+let datetimeElement = document.getElementById('datetime');
+
+ datetimeElement.innerHTML = now;
+
+}
+
+ setInterval(()=>displayDateTime(),1000);
+
+ </script>
+
+</html>

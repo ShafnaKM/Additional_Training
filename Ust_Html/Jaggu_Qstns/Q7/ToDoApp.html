@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+    <style>
+       form{
+           margin: 50px 50px 50px 400px;
+           width: 350px;
+           padding: 15px;
+           font-size: medium;
+           border: solid 2px;
+           background-color: bisque;
+       }
+       h2{
+           text-align: center;
+       }
+       table{
+           line-height: 10px;
+           /* border-collapse: separate; */
+            border-spacing: 20px 0;
+          
+       }
+       td {
+     padding: 10px 0;
+    }
+    /* #btn{
+        margin-left: 50%;
+    }
+    #btn1{
+        margin-left: 25%;
+    } */
+    .div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+   
+    </style>
+</head>
+<body>
+    
+    <form action="" id="form">
+<div>
+        <table>
+            <tr>
+                <h2>To Do App </h2>
+            </tr>
+            <tr>
+                <td>
+                    <label id="label1">Task Name</label>
+                </td>
+                <td><input type="text" id="in1" placeholder="Name" required></td>
+            </tr>
+            <tr>
+                <td> <label >Due Date</label></td>
+                <td><input type="Date" id="dueDate" placeholder="Date"  required></td>
+            </tr>
+            <tr>
+                <td><label >Priority</label></td>
+                <td><select name="Priority" id="prio">
+                    <option value="0">----Select----</option>
+                    <option value="High">High</option>
+                    <option value="Low">Low</option>
+                </select></td>
+            </tr>
+        
+    </table>
+</div>   
+                <div class="div">
+                <button type="submit" id="btn"  onclick="validateDate()" >Submit</button>
+                <button type="button" id="btn1">View All</button>
+            </div>
+           
+       
+        
+
+    </form>
+
+</body>
+<script>
+    function saveData(){
+        let taskName=document.getElementById("in1").value;
+        let dueDate=document.getElementById("dueDate").value;
+        let priority=document.getElementById("prio").value;
+    }
+    function validateDate(){
+        event.preventDefault();
+        let date=document.getElementById("dueDate").value;
+        var curDate=new Date();
+        var futureDate=new Date(date);
+        if(futureDate<=curDate){
+            alert('Enter A future Date');
+        }
+        else{
+            saveData();
+        }
+
+    }
+</script>
+</html>

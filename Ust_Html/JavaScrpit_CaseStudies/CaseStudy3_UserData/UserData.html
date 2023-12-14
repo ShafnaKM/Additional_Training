@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserData</title>
+    <style>
+        #formId{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            border: solid;
+            border: 3px;
+            border-color: black;
+            border-radius: 10px;
+            background-color: rgb(255,248,220);
+            margin: auto;
+            margin-top: 260px;
+            padding: 18px;
+        }
+        #inputID1,#inputId2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10px;
+
+        }
+        #inputId2{
+            margin-bottom: 20px;
+        }
+        #btn{
+            background-color: rgb(0,0,255);
+            color: rgb(255,255,255);
+            width: 90px;
+            margin: auto;
+            padding: 8px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<form  id="formId" onsubmit="check1()">
+<label >Name</label>
+<input type="text" id="inputId1">
+<label>Password</label>
+<input type="password" id="inputId2">
+<button id="btn" >Check</button>
+</form>
+</body>
+<script>
+    function check1(){
+        event.preventDefault();
+       let  name=document.getElementById("inputId1").value.trim();
+       let  password=document.getElementById("inputId2").value;
+
+       console.log(name);
+       console.log(password);
+       if(name===""||name.length==0){
+        alert("Name Can't Be Empty");
+       }
+       
+       else if(password.length<6){
+           alert("Password has Atleast 6 letters ");
+       }
+    }
+</script>
+</html>

@@ -1,0 +1,1 @@
+In this project, a responsive web page regarding zoos is created. The web page contains the latest news about Toronto zoo. Also, there are some images about animals and a Valentine's Day special offer on the page.

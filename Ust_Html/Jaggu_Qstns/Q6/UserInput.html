@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+</body>
+<script>
+    window.onload=function(){
+        var n;
+        var UserInput;
+        do{
+            UserInput=prompt("Enter the value");
+            n=parseInt(UserInput);
+    }
+    while(n<=1 || n>=15);
+
+//    console.log(UserInput)
+   
+//    console.log(UserInput)
+    for(let i=1;i<=10;i++){
+        document.write(`${i} * ${n} = ${i*n} <br>`);
+    }
+    }
+</script>
+</html>

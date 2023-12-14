@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <title>Date and Time Example</title>
+
+</head>
+
+<body onload="displayDateTime()">
+
+<h2>Current Date and Time</h2>
+
+<p><time id="datetime"></time></p>
+
+</body>
+
+<script>
+
+ function displayDateTime() {
+
+ var now = new Date();
+
+ var formattedDate = now.toLocaleDateString(); // Format the date as per locale
+
+ var formattedTime = now.toLocaleTimeString(); // Format the time as per locale
+var datetimeElement = document.getElementById('datetime');
+
+ datetimeElement.textContent = formattedDate + ' ' + formattedTime;
+
+}
+
+setInterval(()=>displayDateTime(),1000);
+
+</script>
+
+</html>
